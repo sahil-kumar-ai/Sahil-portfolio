@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'SourceCodeProMedium';
+  src: url('../assets/fonts/SourceCodePro-Medium.ttf');
+}
