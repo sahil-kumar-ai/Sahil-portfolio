@@ -1,9 +1,8 @@
-import React from 'react'
 import TaskBarBG from './TaskBarBG'
 
 const TaskBar = () => {
   return (
-    <div>
+    <div className='z-[9999]' style={{ position: 'relative' }}>
       <TaskBarBG />
     </div>
   )

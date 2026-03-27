@@ -4,3 +4,25 @@
   font-family: 'SourceCodeProMedium';
   src: url('../assets/fonts/SourceCodePro-Medium.ttf');
 }
+
+@font-face {
+  font-family: 'TextMedium';
+  src: url('../assets/fonts/SourceCodePro-VariableFont_wght.ttf');
+}
+
+.readme-scroll::-webkit-scrollbar {
+  width: 10px;
+}
+
+.readme-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.readme-scroll::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.35);
+  border-radius: 999px;
+}
+
+.readme-scroll::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
