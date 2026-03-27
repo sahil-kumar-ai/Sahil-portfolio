@@ -1,18 +1,20 @@
-import React from 'react'
-import HeroSection from '../components/homePageComponents/HeroSectionWallpaper'
+import HeroSection from '../components/homePageComponents/heroSection'
 import TaskBar from '../components/taskBar/TaskBar'
 
 const Home = () => {
   return (
-    <div className='relative h-screen w-screen overflow-hidden'>
-      
-      <div className='absolute'>
+    <div className='relative h-screen w-screen'>
+
+      <div className='absolute inset-0' style={{ zIndex: 0 }}>
         <HeroSection />
       </div>
-      
-      <div className='absolute flex flex-col justify-end items-center h-screen w-screen '>
-        <TaskBar />
+
+      <div className='absolute' style={{ zIndex: 9999, pointerEvents: 'none' }}>
+        <div style={{ pointerEvents: 'auto' }}>
+          <TaskBar />
+        </div>
       </div>
+
     </div>
   )
 }

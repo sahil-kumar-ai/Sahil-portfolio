@@ -1,13 +1,14 @@
-import React from 'react'
+import React from 'react';
 import HeroSectionWallpaper from './HeroSectionWallpaper';
-import TaskBar from '../src/components/taskBar/TaskBar';
+import HeroImages from './HeroImages';
 
 const HeroSection = () => {
   return (
-    <div className='relative'>
+    <div className="relative w-full h-screen overflow-hidden">
       <HeroSectionWallpaper />
+      <HeroImages />
     </div>
-  )
-}
+  );
+};
 
 export default HeroSection;
